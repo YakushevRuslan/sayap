@@ -6,6 +6,8 @@ import utils.ReadStudent;
 import java.util.ArrayList;
 import java.util.HashSet;
 
+import static utils.FilterStudent.printStudents;
+
 public class Solution {
     public static void main(String[] args) {
         //3
@@ -25,8 +27,9 @@ public class Solution {
         System.out.print(set.size());
 
         //4.1
+        System.out.println("************  4.1  *******************");
 
-        ArrayList<Student> students = ReadStudent.read("/home/ruslan/Projects/Idea/sayap-3lb/src/students.txt");
+        ArrayList<Student> students = ReadStudent.read("/home/ruslan/Projects/Institut/sayap/3_lb/src/students.txt");
         for (Student s : students) {
             System.out.println(s.toString());
         }
@@ -37,8 +40,8 @@ public class Solution {
 
 
         //4.2
-
-
+        System.out.println("************  4.2  *******************");
+        printStudents(students);
 
     }
 }
