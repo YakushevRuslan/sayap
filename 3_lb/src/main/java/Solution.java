@@ -35,10 +35,7 @@ public class Solution {
         }
 
         FilterStudent.deleteStudent(students, 3);
-
-
-
-
+        
         //4.2
         System.out.println("************  4.2  *******************");
         printStudents(students);
